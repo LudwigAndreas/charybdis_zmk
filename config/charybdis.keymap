@@ -189,34 +189,34 @@
 
         Lower {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&kp GRAVE  &kp EXCL  &kp AT        &kp POUND  &kp DLLR   &kp PRCNT    &kp CARET        &kp AMPS         &kp ASTRK        &kp LPAR         &kp RPAR   &kp UNDER
+&trans     &trans    &trans        &trans     &trans     &trans       &kp LBKT         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RBKT   &trans
+&trans     &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &trans       &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp EQUAL
+&trans     &trans    &trans        &trans     &trans     &trans       &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH  &kp DOT
+                                   &trans     &trans     &trans       &trans           &trans
+                                              &trans     &trans       &kp KP_NUMBER_0
             >;
         };
 
         Raise {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&kp F12           &kp F1    &kp F2          &kp F3         &kp F4           &kp F5    &kp F6  &kp F7      &kp F8     &kp F9         &kp F10   &kp F11
+&kp K_NEXT        &trans    &trans          &kp UP         &trans           &trans    &trans  &trans      &trans     &trans         &trans    &kp K_VOLUME_UP
+&kp K_PLAY_PAUSE  &trans    &kp LEFT_ARROW  &kp DOWN       &kp RIGHT_ARROW  &trans    &trans  &kp RSHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RGUI  &kp K_MUTE
+&kp K_PREV        &kp HOME  &kp PG_UP       &kp PAGE_DOWN  &kp END          &trans    &trans  &trans      &trans     &trans         &trans    &kp K_VOLUME_DOWN
+                                            &trans         &trans           &trans    &trans  &trans
+                                                           &trans           &trans    &trans
             >;
         };
 
         Mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&bootloader  &sys_reset  &trans    &trans     &trans      &trans      &trans    &trans     &trans     &trans    &sys_reset  &bootloader
+&trans       &trans      &trans    &trans     &trans      &trans      &trans    &trans     &trans     &trans    &trans      &trans
+&trans       &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHIFT  &trans      &trans    &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI    &trans
+&trans       &trans      &trans    &trans     &trans      &trans      &trans    &trans     &trans     &trans    &trans      &trans
+                                   &mkp MB2   &mkp MB1    &mkp MB3    &mkp MB3  &mkp MB1
+                                              &trans      &mkp MB2    &mkp MB2
             >;
         };
     };
