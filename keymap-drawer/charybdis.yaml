@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   Base:
-  - ESC
+  - '='
   - '1'
   - '2'
   - '3'
@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - \
-  - LSHIFT
+  - ESCAPE
   - A
   - S
   - D
@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - LCTRL
+  - LEFT SHIFT
   - {t: Z, h: Mouse}
   - X
   - C
@@ -48,15 +48,15 @@ layers:
   - ','
   - .
   - {t: /, h: Mouse}
-  - LALT
-  - LGUI
-  - SPACE
-  - Lower
-  - Raise
-  - ENTER
-  - LEFT ALT
+  - RSHIFT
   - BACK SPACE
+  - LCTRL
+  - LALT
+  - RCTRL
+  - SPACE
   - DELETE
+  - {t: LGUI, h: Lower}
+  - {t: ENTER, h: Raise}
   Lower:
   - '`'
   - '!'
@@ -108,11 +108,11 @@ layers:
   - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - KP 0
   Raise:
   - DEV TOOLS
@@ -166,11 +166,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   Mouse:
   - BOOT LDR
   - '&sys_reset'
@@ -209,15 +209,15 @@ layers:
   - RGUI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: '&msc MOVE_Y(0)', type: held}
+  - '&mmv MOVE_Y(0)'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_X(0)'
+  - '&msc MOVE_Y(15)'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB2'

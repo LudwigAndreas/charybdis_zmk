@@ -177,12 +177,12 @@
 
         Base {
             bindings = <
-&kp ESC     &kp N1   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp N6      &kp N7     &kp N8     &kp N9   &kp N0      &kp MINUS
-&kp TAB     &kp Q    &kp W         &kp E         &kp R         &kp T            &kp Y       &kp U      &kp I      &kp O    &kp P       &kp BACKSLASH
-&kp LSHIFT  &kp A    &kp S         &kp D         &kp F         &kp G            &kp H       &kp J      &kp K      &kp L    &kp SEMI    &kp APOS
-&kp LCTRL   &lt 3 Z  &kp X         &kp C         &kp V         &kp B            &kp N       &kp M      &kp COMMA  &kp DOT  &lt 3 FSLH  &kp LALT
-                                   &kp LGUI      &kp SPACE     &mo 1            &mo 2       &kp ENTER
-                                                 &kp LEFT_ALT  &kp BACKSPACE    &kp DELETE
+&kp EQUAL       &kp N1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5    &kp N6       &kp N7     &kp N8     &kp N9   &kp N0      &kp MINUS
+&kp TAB         &kp Q    &kp W         &kp E          &kp R         &kp T           &kp Y        &kp U      &kp I      &kp O    &kp P       &kp BACKSLASH
+&kp ESCAPE      &kp A    &kp S         &kp D          &kp F         &kp G           &kp H        &kp J      &kp K      &kp L    &kp SEMI    &kp APOS
+&kp LEFT_SHIFT  &lt 3 Z  &kp X         &kp C          &kp V         &kp B           &kp N        &kp M      &kp COMMA  &kp DOT  &lt 3 FSLH  &kp RSHIFT
+                                       &kp BACKSPACE  &kp LCTRL     &kp LALT        &kp RCTRL    &kp SPACE
+                                                      &kp DELETE    &lt 1 LGUI      &lt 2 ENTER
             >;
         };
 
@@ -210,12 +210,12 @@
 
         Mouse {
             bindings = <
-&bootloader  &sys_reset  &trans    &trans     &trans      &trans      &trans    &trans     &trans     &trans    &sys_reset  &bootloader
-&trans       &trans      &trans    &trans     &trans      &trans      &trans    &trans     &trans     &trans    &trans      &trans
-&trans       &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHIFT  &trans      &trans    &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI    &trans
-&trans       &trans      &trans    &trans     &trans      &trans      &trans    &trans     &trans     &trans    &trans      &trans
-                                   &mkp MB2   &mkp MB1    &mkp MB3    &mkp MB3  &mkp MB1
-                                              &trans      &mkp MB2    &mkp MB2
+&bootloader  &sys_reset      &trans          &trans     &trans      &trans      &trans    &trans     &trans          &trans           &sys_reset  &bootloader
+&trans       &trans          &trans          &trans     &trans      &trans      &trans    &trans     &trans          &trans           &trans      &trans
+&trans       &kp LGUI        &kp LALT        &kp LCTRL  &kp LSHIFT  &trans      &trans    &kp RSHFT  &kp RCTRL       &kp RALT         &kp RGUI    &trans
+&trans       &msc MOVE_Y(0)  &mmv MOVE_Y(0)  &trans     &trans      &trans      &trans    &trans     &mmv MOVE_X(0)  &msc MOVE_Y(15)  &trans      &trans
+                                             &mkp MB2   &mkp MB1    &mkp MB3    &mkp MB3  &mkp MB1
+                                                        &trans      &mkp MB2    &mkp MB2
             >;
         };
     };
