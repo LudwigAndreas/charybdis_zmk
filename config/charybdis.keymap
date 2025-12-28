@@ -178,7 +178,7 @@
         Base {
             bindings = <
 &kp EQUAL       &kp N1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5    &kp N6       &kp N7     &kp N8     &kp N9   &kp N0      &kp MINUS
-&kp TAB         &kp Q    &kp W         &kp E          &kp R         &kp T           &kp Y        &kp U      &kp I      &kp O    &kp P       &kp BACKSLASH
+&kp TAB         &kp Q    &kp W         &kp E          &kp R         &kp T           &kp Y        &kp U      &kp I      &kp O    &kp P       &kp LEFT_BRACKET
 &kp ESCAPE      &kp A    &kp S         &kp D          &kp F         &kp G           &kp H        &kp J      &kp K      &kp L    &kp SEMI    &kp APOS
 &kp LEFT_SHIFT  &lt 3 Z  &kp X         &kp C          &kp V         &kp B           &kp N        &kp M      &kp COMMA  &kp DOT  &lt 3 FSLH  &kp RSHIFT
                                        &kp BACKSPACE  &kp LCTRL     &kp LALT        &kp RCTRL    &kp SPACE
@@ -189,7 +189,7 @@
         Lower {
             bindings = <
 &kp GRAVE  &kp EXCL  &kp AT        &kp POUND  &kp DLLR   &kp PRCNT    &kp CARET        &kp AMPS         &kp ASTRK        &kp LPAR         &kp RPAR   &kp UNDER
-&trans     &trans    &trans        &trans     &trans     &trans       &kp LBKT         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RBKT   &trans
+&trans     &trans    &trans        &trans     &trans     &trans       &kp LBKT         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RBKT   &kp BACKSLASH
 &trans     &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &trans       &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp EQUAL
 &trans     &trans    &trans        &trans     &trans     &trans       &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH  &kp DOT
                                    &trans     &trans     &trans       &trans           &trans

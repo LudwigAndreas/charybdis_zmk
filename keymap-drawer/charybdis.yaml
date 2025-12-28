@@ -24,7 +24,7 @@ layers:
   - I
   - O
   - P
-  - \
+  - '['
   - ESCAPE
   - A
   - S
@@ -81,7 +81,7 @@ layers:
   - KP 8
   - KP 9
   - ']'
-  - {t: ▽, type: trans}
+  - \
   - {t: ▽, type: trans}
   - LGUI
   - LEFT ALT
