@@ -64,7 +64,7 @@ Here are a few tips for a quick start:
   - When double tapped, it will reduce the cursor speed for more precision, and activate the mouse layer.
   - When single tapped it outputs the escape key.
 
-![keymap images](keymap-drawer/charybdis.svg)
+![keymap images](keymap-drawer/qwerty.svg)
 
 ## Modify Key Mappings
 
