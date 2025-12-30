@@ -29,11 +29,8 @@
                 ;
 };
 
-// https://github.com/badjeff/zmk-pmw3610-driver
-/ {
-  trackball_listener {
-    compatible = "zmk,input-listener";
+/* enable the listener on central */
+&trackball_listener {
+    status = "okay";
     device = <&trackball>;
-  };
 };
-
