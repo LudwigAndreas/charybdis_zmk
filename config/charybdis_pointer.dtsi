@@ -20,17 +20,14 @@
 */
 
 &trackball_listener {
+    status = "okay";
     /* base processor chain on all layers */
     input-processors = <&zip_xy_scaler 5 5>;
 
     /* layer-8 scroll override */
     scroller: scroller {
         layers           = <4>;
-        input-processors = <
-            &zip_xy_scaler 1 15                              // Scales the scroll speed
-            &zip_xy_to_scroll_mapper                         // Converts XY movement to scroll events
-            &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) // Inverts the scroll direction
-        >;
+        input-processors = <&zip_xy_scaler 1 15>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
     };
 
     /* layer-7 slow-pointer override */
