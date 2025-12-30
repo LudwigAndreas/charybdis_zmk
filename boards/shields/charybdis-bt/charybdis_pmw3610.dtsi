@@ -65,3 +65,5 @@
         /* NOTE: apply this mode if you need 250Hz with direct USB connection. */
     };
 };
+
+
