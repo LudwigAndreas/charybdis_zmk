@@ -1,6 +1,9 @@
 
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+#include "charybdis.dtsi"
+#include "charybdis_pmw3610.dtsi"
+#include "charybdis_pointer.dtsi"
 
 /*
 &mmv {
