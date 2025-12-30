@@ -32,8 +32,12 @@ Follow the steps below to flash the firmware
 
 Mostly keymaps was taken from [default Bastard keybaords keymap for charybdis v2](https://docs.bastardkb.com/fw/default-keymaps.html) but with changed thumb clusters.
 
+![keymap images](keymap-drawer/charybdis.svg)
+
 ## Credits
 
+- [280Zo](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware)
+- [caksoylar](https://github.com/caksoylar/zmk-config)
 - [eigatech](https://github.com/eigatech)
 - [badjeff](https://github.com/badjeff)
 - [inorichi](https://github.com/inorichi)
