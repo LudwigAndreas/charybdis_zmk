@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   Base:
-  - '='
+  - ESCAPE
   - '1'
   - '2'
   - '3'
@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - \
-  - ESCAPE
+  - LEFT SHIFT
   - A
   - S
   - D
@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - LEFT SHIFT
+  - LCTRL
   - {t: Z, h: Mouse}
   - X
   - C
@@ -48,15 +48,15 @@ layers:
   - ','
   - .
   - {t: /, h: Mouse}
-  - RSHIFT
-  - BACK SPACE
-  - LCTRL
-  - LALT
   - RCTRL
+  - ENTER
   - SPACE
+  - Lower
+  - Raise
+  - BACK SPACE
+  - LEFT ALT
+  - LGUI
   - DELETE
-  - {t: LGUI, h: Lower}
-  - {t: ENTER, h: Raise}
   Lower:
   - '`'
   - '!'
@@ -108,11 +108,11 @@ layers:
   - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - KP 0
   Raise:
   - DEV TOOLS
@@ -166,11 +166,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Mouse:
   - BOOT LDR
   - '&sys_reset'
@@ -254,16 +254,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RSHIFT
+  - RCTRL
+  - RIGHT ALT
+  - RGUI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -277,14 +277,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&mkp MB2'
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB3'
+  - '&mkp MB1'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MB2'
+  - '&mkp MB2'
   Snipe:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -311,16 +311,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RSHIFT
+  - RCTRL
+  - RIGHT ALT
+  - RGUI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -334,11 +334,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&mkp MB2'
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB3'
+  - '&mkp MB1'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MB2'
+  - '&mkp MB2'
