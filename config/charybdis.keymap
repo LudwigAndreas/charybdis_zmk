@@ -1,6 +1,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -80,97 +81,7 @@
     // #define SNIPER   10
     // #define FN       11
 
-    combos {
-        compatible = "zmk,combos";
-
-        to-WIN {
-            bindings = <&to 0>;
-            key-positions = <50 51>;
-        };
-
-        to-MAC {
-            bindings = <&to 0>;
-            key-positions = <50 51>;
-        };
-
-        to-GAME {
-            bindings = <&to 0>;
-            key-positions = <47 36>;
-        };
-
-        to-FN {
-            bindings = <&to 0>;
-            key-positions = <41 42>;
-        };
-
-        caps_word {
-            bindings = <&caps_word>;
-            key-positions = <31 28>;
-        };
-
-        rh_leftClick {
-            bindings = <&mkp LCLK>;
-            key-positions = <43 44>;
-        };
-
-        rh_rightClick {
-            bindings = <&mkp RCLK>;
-            key-positions = <44 45>;
-        };
-
-        rh_middleClick {
-            bindings = <&mkp MCLK>;
-            key-positions = <44 45 43>;
-        };
-
-        lh_leftClick {
-            bindings = <&mkp LCLK>;
-            key-positions = <40 39>;
-        };
-
-        lh_rightClick {
-            bindings = <&mkp RCLK>;
-            key-positions = <38 39>;
-        };
-
-        lh_middleClick {
-            bindings = <&mkp MCLK>;
-            key-positions = <38 39 40>;
-        };
-
-        CAPZ {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <24 25>;
-        };
-    };
-
-    behaviors {
-        hmr: hmr {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick-tap-ms = <175>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 48 49 50 53 54 51 52 55>;
-            hold-trigger-on-release;
-        };
-
-        hml: hml {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HML";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick-tap-ms = <175>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <48 49 50 53 54 51 52 55 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 42 43 44 45 46 47 51 52>;
-            hold-trigger-on-release;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -178,7 +89,7 @@
         Base {
             bindings = <
 &kp EQUAL       &kp N1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5    &kp N6       &kp N7     &kp N8     &kp N9   &kp N0      &kp MINUS
-&kp TAB         &kp Q    &kp W         &kp E          &kp R         &kp T           &kp Y        &kp U      &kp I      &kp O    &kp P       &kp LEFT_BRACKET
+&kp TAB         &kp Q    &kp W         &kp E          &kp R         &kp T           &kp Y        &kp U      &kp I      &kp O    &kp P       &kp BACKSLASH
 &kp ESCAPE      &kp A    &kp S         &kp D          &kp F         &kp G           &kp H        &kp J      &kp K      &kp L    &kp SEMI    &kp APOS
 &kp LEFT_SHIFT  &lt 3 Z  &kp X         &kp C          &kp V         &kp B           &kp N        &kp M      &kp COMMA  &kp DOT  &lt 3 FSLH  &kp RSHIFT
                                        &kp BACKSPACE  &kp LCTRL     &kp LALT        &kp RCTRL    &kp SPACE
@@ -210,12 +121,36 @@
 
         Mouse {
             bindings = <
-&bootloader  &sys_reset      &trans          &trans     &trans      &trans      &trans    &trans     &trans          &trans           &sys_reset  &bootloader
-&trans       &trans          &trans          &trans     &trans      &trans      &trans    &trans     &trans          &trans           &trans      &trans
-&trans       &kp LGUI        &kp LALT        &kp LCTRL  &kp LSHIFT  &trans      &trans    &kp RSHFT  &kp RCTRL       &kp RALT         &kp RGUI    &trans
-&trans       &msc MOVE_Y(0)  &mmv MOVE_Y(0)  &trans     &trans      &trans      &trans    &trans     &mmv MOVE_X(0)  &msc MOVE_Y(15)  &trans      &trans
-                                             &mkp MB2   &mkp MB1    &mkp MB3    &mkp MB3  &mkp MB1
-                                                        &trans      &mkp MB2    &mkp MB2
+&bootloader  &sys_reset  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR    &bt BT_CLR  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &sys_reset  &bootloader
+&trans       &trans      &trans        &trans        &trans        &trans        &trans      &trans        &trans        &trans        &trans      &trans
+&trans       &kp LGUI    &kp LALT      &kp LCTRL     &kp LSHIFT    &trans        &trans      &kp RSHFT     &kp RCTRL     &kp RALT      &kp RGUI    &trans
+&trans       &trans      &mo 4         &mo 5         &trans        &trans        &trans      &trans        &mo 5         &mo 4         &trans      &trans
+                                       &mkp MB2      &mkp MB1      &mkp MB3      &mkp MB3    &mkp MB1
+                                                     &trans        &mkp MB2      &mkp MB2
+            >;
+        };
+
+        Ds {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+                                &trans  &trans    &trans
+            >;
+
+            label = "Drag Scroll";
+        };
+
+        Snipe {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+                                &trans  &trans    &trans
             >;
         };
     };
