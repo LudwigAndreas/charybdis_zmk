@@ -88,7 +88,7 @@ layers:
   - LCTRL
   - LSHFT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - +
   - KP 4
   - KP 5
   - KP 6
@@ -100,7 +100,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '*'
   - KP 1
   - KP 2
   - KP 3

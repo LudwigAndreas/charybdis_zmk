@@ -101,8 +101,8 @@
             bindings = <
 &kp GRAVE  &kp EXCL  &kp AT        &kp POUND  &kp DLLR   &kp PRCNT    &kp CARET        &kp AMPS         &kp ASTRK        &kp LPAR         &kp RPAR   &kp UNDER
 &trans     &trans    &trans        &trans     &trans     &trans       &kp LBKT         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RBKT   &kp BACKSLASH
-&trans     &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &trans       &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp EQUAL
-&trans     &trans    &trans        &trans     &trans     &trans       &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH  &kp DOT
+&trans     &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &trans       &kp PLUS         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp EQUAL
+&trans     &trans    &trans        &trans     &trans     &trans       &kp ASTERISK     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH  &kp DOT
                                    &trans     &trans     &trans       &trans           &trans
                                               &trans     &trans       &kp KP_NUMBER_0
             >;
