@@ -32,7 +32,7 @@ Follow the steps below to flash the firmware
 
 Mostly keymaps was taken from [default Bastard keybaords keymap for charybdis v2](https://docs.bastardkb.com/fw/default-keymaps.html) but with changed thumb clusters.
 
-![keymap images](keymap-drawer/charybdis.svg)
+![keymap images](keymap-drawer/qwerty.svg)
 
 ## Credits
 
