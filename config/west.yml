@@ -3,9 +3,6 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
 
-    - name: badjeff
-      url-base: https://github.com/badjeff
-
     - name: 280Zo
       url-base: https://github.com/280Zo
 
@@ -17,18 +14,6 @@ manifest:
 
     - name: zmk-pmw3610-driver
       remote: 280Zo
-      revision: main
-
-    - name: zmk-split-peripheral-input-relay
-      remote: badjeff
-      revision: main
-
-    - name: visorbearer-zmk-module
-      url: https://github.com/carrefinho/visorbearer-zmk-module
-      revision: main
-
-    - name: zmk-input-behavior-listener
-      remote: badjeff
       revision: main
 
   self:
