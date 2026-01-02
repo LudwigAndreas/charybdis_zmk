@@ -1,0 +1,38 @@
+
+#include <input/processors.dtsi>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/input_transform.h>
+
+/*
+&mmv {
+    acceleration-exponent = <1>;      // 1
+    time-to-max-speed-ms = <500>;     // 300
+    trigger-period-ms = <16>;
+};
+
+&msc {
+    acceleration-exponent = <1>;      // 0
+    time-to-max-speed-ms = <40>;      // 300
+    trigger-period-ms = <16>;
+};
+*/
+
+&trackball_listener {
+    status = "okay";
+    /* base processor chain on all layers */
+    input-processors = <&zip_xy_scaler 5 5>;
+
+    /* layer-8 scroll override */
+    scroller: scroller {
+        layers           = <4>;
+        input-processors = <&zip_xy_scaler 1 35>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
+    };
+
+    /* layer-7 slow-pointer override */
+    slow_pointer: slow_pointer {
+        layers           = <5>;
+        input-processors = <&zip_xy_scaler 2 6>;
+    };
+};
