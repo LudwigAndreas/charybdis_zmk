@@ -135,7 +135,7 @@ jobs:
 
         declare -A LIST=(
           [bt]="charybdis_left charybdis_right"
-          [dongle]="charybdis_left charybdis_right charybdis_dongle"
+          # [dongle]="charybdis_left charybdis_right charybdis_dongle"
           [reset]="settings_reset"
         )
 
