@@ -56,65 +56,8 @@ layers:
   - BACK SPACE
   - LEFT ALT
   - LGUI
-  - DELETE
+  - ESCAPE
   Lower:
-  - '`'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - _
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '['
-  - KP 7
-  - KP 8
-  - KP 9
-  - ']'
-  - \
-  - {t: ▽, type: trans}
-  - LGUI
-  - LEFT ALT
-  - LCTRL
-  - LSHFT
-  - {t: ▽, type: trans}
-  - +
-  - KP 4
-  - KP 5
-  - KP 6
-  - '-'
-  - '='
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '*'
-  - KP 1
-  - KP 2
-  - KP 3
-  - /
-  - .
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - KP 0
-  Raise:
   - DEV TOOLS
   - F1
   - F2
@@ -130,7 +73,7 @@ layers:
   - NEXT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UP
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -140,30 +83,87 @@ layers:
   - {t: ▽, type: trans}
   - VOLUME UP
   - PLAY PAUSE
+  - LGUI
+  - LEFT ALT
+  - LCTRL
+  - LSHFT
   - {t: ▽, type: trans}
   - LEFT
   - DOWN
+  - UP ARROW
   - RIGHT
   - {t: ▽, type: trans}
+  - MUTE
+  - PREVIOUS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - PAGE DOWN
+  - PG UP
+  - END
+  - INSERT
+  - VOL UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Raise:
+  - '`'
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - \
+  - '['
+  - KP 7
+  - KP 8
+  - KP 9
+  - ']'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - +
+  - '-'
+  - KP 4
+  - KP 5
+  - KP 6
+  - '='
   - {t: ▽, type: trans}
   - RSHIFT
   - RCTRL
   - RIGHT ALT
   - RGUI
-  - MUTE
-  - PREV
-  - HOME
-  - PG UP
-  - PAGE DOWN
-  - END
+  - {t: ▽, type: trans}
+  - .
+  - /
+  - KP 1
+  - KP 2
+  - KP 3
+  - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - VOLUME DOWN
-  - {t: ▽, type: trans}
+  - KP 0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
