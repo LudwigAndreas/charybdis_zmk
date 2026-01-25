@@ -52,9 +52,9 @@
         Lower {
             bindings = <
 &kp F12           &kp F1    &kp F2        &kp F3     &kp F4     &kp F5    &kp F6    &kp F7         &kp F8        &kp F9     &kp F10     &kp F11
-&kp K_NEXT        &trans    &trans        &trans     &trans     &trans    &trans    &trans         &trans        &trans     &trans      &kp K_VOLUME_UP
-&kp K_PLAY_PAUSE  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans      &kp K_MUTE
-&kp K_PREVIOUS    &trans    &trans        &trans     &trans     &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp INSERT  &kp K_VOL_UP
+&kp C_NEXT        &trans    &trans        &trans     &trans     &trans    &trans    &trans         &trans        &trans     &trans      &kp C_VOL_UP
+&kp C_PLAY_PAUSE  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans      &kp C_MUTE
+&kp C_PREVIOUS    &trans    &trans        &trans     &trans     &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp INSERT  &kp C_VOL_DN
                                           &trans     &trans     &trans    &trans    &kp DEL
                                                      &trans     &trans    &trans
             >;
